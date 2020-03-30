@@ -1,0 +1,60 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1585561620291" stop="1585561651006">
+  <name>Scripts</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1585561620291" status="failed" stop="1585561651006">
+      <name>D:\python_study\03.26\16.初始化内容审核管理\Scripts.test_content_pass.TestLogin.test_login</name>
+      <failure>
+        <message>AssertionError: </message>
+        <stack-trace>self = &lt;Scripts.test_content_pass.TestLogin object at 0x000001DD417B0DA0&gt;
+
+    def test_login(self):
+        # [数据]
+    
+        # [业务: 账号 密码 登录]
+        self.handle.init_login.input_user()
+        self.handle.init_login.input_pwd()
+        self.handle.init_login.click_login()
+        self.handle.init_index.click_infor_man_fea()
+        time.sleep(1)
+        self.handle.init_index.clcik_content_check_fea()
+        # time.sleep(1)
+        # self.handle.init_art_r_pass.input_title_box_fea()
+        time.sleep(1)
+        self.handle.init_art_r_pass.click_status_bbox_fea()
+        time.sleep(1)
+        self.handle.init_art_r_pass.click_select_fea()
+        time.sleep(1)
+        self.handle.init_art_r_pass.click_get_query_fea()
+        time.sleep(3)
+        self.handle.init_art_r_pass.click_pass_click__fea()
+        time.sleep(1)
+        self.handle.init_art_r_pass.click_sure_fea()
+        # [断言]
+        time.sleep(1)
+&gt;       self.handle.init_art_r_pass.assert_success()
+
+Scripts\test_content_pass.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;Handle.handle_art_r_pass.HandleleArticleReviewPass object at 0x000001DD417B0C50&gt;
+
+    def assert_success(self):
+        msg = self.get_success_fea()
+&gt;       assert True if msg else False
+E       AssertionError
+
+Handle\handle_art_r_pass.py:29: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="18912-MainThread"/>
+        <label name="host" value="zj9-pc"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
